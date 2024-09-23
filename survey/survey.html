@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile Survey</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <h1 id="title">Mobile Survey</h1>
+    <p id="description">Help us understand your mobile usage habits by completing this short survey:</p>
+    
+    <form id="survey-form">
+      <!-- Name Field -->
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+
+      <!-- Email Field -->
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+
+      <!-- Number Field -->
+      <div class="form-group">
+        <label id="number-label" for="number">Age</label>
+        <input type="number" id="number" name="number" min="13" max="80" placeholder="Enter your age" required>
+      </div>
+
+      <!-- Dropdown Field -->
+      <div class="form-group">
+        <label for="dropdown">How often do you use mobile apps?</label>
+        <select id="dropdown" name="dropdown">
+          <option disabled selected value> Select an option: </option>
+          <option value="daily">Daily</option>
+          <option value="weekly">Weekly</option>
+          <option value="monthly">Monthly</option>
+          <option value="rarely">Rarely</option>
+        </select>
+      </div>
+
+      <!-- Radio Buttons Field -->
+      <div class="form-group">
+        <p>What type of mobile apps do you use the most?</p>
+        <label><input type="radio" name="app-type" value="social" required> Social Media</label>
+        <label><input type="radio" name="app-type" value="games"> Games</label>
+        <label><input type="radio" name="app-type" value="productivity"> Productivity</label>
+        <label><input type="radio" name="app-type" value="shopping"> Shopping</label>
+      </div>
+
+      <!-- Checkbox Field -->
+      <div class="form-group">
+        <p>Which features do you value the most in a mobile app? (Check all that apply)</p>
+        <label><input type="checkbox" name="features" value="usability"> Ease of Use</label>
+        <label><input type="checkbox" name="features" value="speed"> Speed and Performance</label>
+        <label><input type="checkbox" name="features" value="design"> Design and Aesthetics</label>
+        <label><input type="checkbox" name="features" value="security"> Security and Privacy</label>
+      </div>
+
+      <!-- Textarea Field -->
+      <div class="form-group">
+        <label for="comments">Any additional comments or suggestions?</label>
+        <textarea id="comments" name="comments" placeholder="Enter your comments here..."></textarea>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="form-group">
+        <button type="submit" id="submit">Submit</button>
+      </div>
+    </form>
+  </main>
+</body>
+</html>
